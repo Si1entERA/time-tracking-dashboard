@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main{
+  border: 1px solid orange;
+  height: 100vh;
+}
+
+.container {
+  border: 1px solid blue;
+  display: grid;
+  grid-template-columns: 350px;
+  grid-template-rows: repeat(3, 150px);
+  align-items: center;
+  gap: 10px;
+  height: 60%;
+}
+
+.user-box {
+  border: 2px solid green;
+  border-radius: 10px;
+}
+
+.profile-pic img {
+  width: 60px;
+}
+
+.user-info {
+  border: 2px solid cyan;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px 55px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.time {
+  border: 2px solid purple;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 25px;
+  font-size: 20px;
+}
+
+.time p {
+  padding: 10px;
+}
+
+/* Report for
+  Jeremy Robson
+
+  Daily
+  Weekly
+  Monthly
+
+  Work
+  5hrs <!-- daily -->
+  Previous - 7hrs <!-- daily -->
+  32hrs <!-- weekly -->
+  Previous - 36hrs <!-- weekly -->
+  103hrs <!-- monthly -->
+  Previous - 128hrs <!-- monthly -->
+
+  Play
+  1hr <!-- daily -->
+  Previous - 2hrs <!-- daily -->
+  10hrs <!-- weekly -->
+  Previous - 8hrs <!-- weekly -->
+  23hrs <!-- monthly -->
+  Previous - 29hrs <!-- monthly -->
+
+  Study
+  0hrs <!-- daily -->
+  Previous - 1hr <!-- daily -->
+  4hrs <!-- weekly -->
+  Previous - 7hrs <!-- weekly -->
+  13hrs <!-- monthly -->
+  Previous - 19hrs <!-- monthly -->
+
+  Exercise
+  1hr <!-- daily -->
+  Previous - 1hr <!-- daily -->
+  4hrs <!-- weekly -->
+  Previous - 5hrs <!-- weekly -->
+  11hrs <!-- monthly -->
+  Previous - 18hrs <!-- monthly -->
+
+  Social
+  1hr <!-- daily -->
+  Previous - 3hrs <!-- daily -->
+  5hrs <!-- weekly -->
+  Previous - 10hrs <!-- weekly -->
+  21hrs <!-- monthly -->
+  Previous - 23hrs <!-- monthly -->
+
+  Self Care
+  0hrs <!-- daily -->
+  Previous - 1hr <!-- daily -->
+  2hrs <!-- weekly -->
+  Previous - 2hrs <!-- weekly -->
+  7hrs <!-- monthly -->
+  Previous - 11hrs monthly
+ */
