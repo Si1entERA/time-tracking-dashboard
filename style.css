@@ -1,29 +1,54 @@
+:root {
+  /* Primary */
+
+--Blue: hsl(246, 80%, 60%);
+
+--Light-red-work: hsl(15, 100%, 70%);
+--Soft-blue-play: hsl(195, 74%, 62%);
+--Light-red-study: hsl(348, 100%, 68%);
+--Lime-green-exercise: hsl(145, 58%, 55%);
+--Violet-social: hsl(264, 64%, 52%);
+--Soft-orange-self-care: hsl(43, 84%, 65%);
+
+/* Neutral */
+
+--Very-dark-blue: hsl(226, 43%, 10%);
+--Dark-blue: hsl(235, 46%, 20%);
+--Desaturated-blue: hsl(235, 45%, 61%);
+--Pale-Blue: hsl(236, 100%, 87%);
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
   display: flex;
   justify-content: center;
+  background-color: var(--Very-dark-blue);
 }
 
 main{
-  border: 1px solid orange;
+  /* border: 1px solid orange; */
   height: 100vh;
 }
 
 .container {
-  border: 1px solid blue;
+  /* border: 1px solid orangered; */
   display: grid;
-  grid-template-columns: 350px;
-  grid-template-rows: repeat(3, 150px);
-  gap: 10px;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(3, 150px); */
+  grid-auto-rows: 150px;
+  
+  grid-gap: 10px;
   height: 60%;
 }
 
 .user-box {
-  border: 2px solid green;
+  /* border: 2px solid green; */
+  background-color: var(--Dark-blue);
   border-radius: 10px;
 }
 
@@ -32,7 +57,9 @@ main{
 }
 
 .user-info {
-  border: 2px solid cyan;
+  /* border: 2px solid cyan; */
+  color: white;
+  background-color: var(--Violet-social);
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
@@ -46,11 +73,16 @@ main{
 }
 
 .time {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
+  color: var(--Pale-Blue);
   display: flex;
   justify-content: space-between;
   margin: 0 25px;
   font-size: 20px;
+}
+
+.active {
+  color: red;
 }
 
 .time p {
@@ -61,6 +93,7 @@ main{
 
 .card {
   border: 2px solid green;
+  background-color: var(--Light-red-work);
   border-radius: 15px;
   align-items: flex-end;
   /* height: 250px; */
@@ -70,6 +103,7 @@ main{
 
 .hero-img {
   border: 2px solid lime;
+  background-color: var(--Light-red-work);
   display: flex;
   justify-content: flex-end;
   height: 40px;
@@ -86,13 +120,16 @@ main{
 
 .card-info {
   border: 2px solid cyan;
+  color: white;
+  background-color: var(--Dark-blue);
   padding: 0 20px;
   border-radius: 15px;
+  height: 120px;
 }
 
 header {
   font-size: 18px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 header, .card-desc, .time-period {
@@ -101,6 +138,8 @@ header, .card-desc, .time-period {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  padding-top: 15px;
+
 
 }
 
@@ -109,60 +148,3 @@ header, .card-desc, .time-period {
 }
 
 
-/* CARD END */
-
-/* Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs monthly
- */

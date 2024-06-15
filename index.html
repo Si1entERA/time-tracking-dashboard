@@ -6,6 +6,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
@@ -28,14 +33,16 @@
       </section>
       
       <section class="time">
-        <figure><P>Daily</P></figure>
-        <figure><P>Weekly</P></figure>
-        <figure><P>Monthly</P></figure>
+        <figure><P class="time-tags">Daily</P></figure>
+        <figure><P class="time-tags active" id="weekly">Weekly</P></figure>
+        <figure><P class="time-tags">Monthly</P></figure>
       </section>
     </section>
     <!-- USER SECTION END -->
 
-    <section class="card">
+    <!-- CARD START -->
+    <section class="card-container"></section>
+    <!-- <section class="card">
       <section class="hero-img">
         <img src="./images/icon-work.svg" alt="">
       </section>
@@ -52,13 +59,13 @@
           </figure>
         </section>
       </section>
-    </section>
+    </section> -->
+    
+    <!-- CARD END -->
+
   </section>
 </main>
-
-  
-  
-
 </body>
+<script src="main.js" type="module"></script>
 </html>
 
