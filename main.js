@@ -1,5 +1,5 @@
 const btn = document.querySelectorAll(".time-tags");
-const container = document.querySelector('.card-container'); // Ensure this matches the class in HTML
+const container = document.querySelector('.card-container'); 
 
 let fetchedData = null;
 
@@ -17,8 +17,10 @@ fetchReport
   })
   .then((data) => {
     console.log(data);
-    fetchedData = data; // Store the fetched data
-    dashboard(data, 'weekly'); // Initialize with 'weekly' data
+    // Store the fetched data
+    fetchedData = data; 
+    // Initialize with 'weekly' data
+    dashboard(data, 'weekly'); 
   })
   .catch((error) => {
     console.error(`data not found ${error}`);
@@ -30,15 +32,16 @@ btn.forEach((btns) => {
     console.log(timeframe);
 
     if (fetchedData) {
-      container.innerHTML = '';// car // Clear previousds
-      dashboard(fetchedData, timeframe); // Update with selected timeframe
+      container.innerHTML = '';
+      // Update with selected timeframe
+      dashboard(fetchedData, timeframe); 
     }
 
     
 
     // Reset all buttons to default color
-    btn.forEach((btn) => btn.style.color = 'var(--Pale-Blue)');
-    e.currentTarget.style.color = 'red'; 
+    btn.forEach((btn) => btn.style.color = 'var(--Desaturated-blue)');
+    e.currentTarget.style.color = 'var(--Pale-Blue)'; 
   });
 });
 
@@ -58,10 +61,10 @@ function dashboard(data, timeframe) {
           <img src="./images/icon-ellipsis.svg" alt="">
         </header>
         <section class="card-desc">
-          <figure class="hours"><h1>${item.timeframes[timeframe].current}hrs</h1></figure>
+          <figure class="hours"><p>${item.timeframes[timeframe].current}hrs</p></figure>
           <figure class="time-period">
-            <p>Last Week -  </p>
-            <p> ${item.timeframes[timeframe].previous}hrs</p>
+            <p>Last Week -</p>
+            <p>${item.timeframes[timeframe].previous}hrs</p>
           </figure>
         </section>
       </section>
